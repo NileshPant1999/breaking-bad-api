@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 import CharacterGrid from "./characters/CharacterGrid";
-import Header from "./ui/Header";
 import Search from "./ui/Search";
 
 function HomeScreen() {
@@ -29,6 +28,9 @@ function HomeScreen() {
     setItems(slice);
     setIsLoading(false);
   };
+
+  console.log(currentPage);
+  console.log(setCharacterPerPage);
 
   useEffect(() => {
     fetchItems();

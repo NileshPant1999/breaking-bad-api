@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import axios from "axios";
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./components/ui/Header";
 import "./App.css";
-import CharacterGrid from "./components/characters/CharacterGrid";
-import Search from "./components/ui/Search";
-import ReactPaginate from "react-paginate";
 import Character from "./components/Character";
 import HomeScreen from "./components/HomeScreen";
 
