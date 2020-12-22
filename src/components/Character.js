@@ -1,6 +1,6 @@
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
-import Spinner from "../components/ui/Spinner";
+import Spinner from "./ui/Spinner";
 
 function Character(props) {
   const [items, setItems] = useState([]);

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
-import CharacterGrid from "./characters/CharacterGrid";
-import Search from "./ui/Search";
+import CharacterGrid from "../characters/CharacterGrid";
+import Search from "../ui/Search";
 
 function HomeScreen() {
   const [items, setItems] = useState([]);
