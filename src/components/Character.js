@@ -25,11 +25,29 @@ function Character(props) {
   ) : (
     <div className="character__details">
       <img src={items.img} alt="" height="500px" width="500px" />
-      <div>
-        <h1>{items.name}</h1>
-        <h1>{items.nickname}</h1>
-        <h1>{items.occupation}</h1>
-        <h1>{items.status}</h1>
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+      <div className="details">
+        <h1> Name: {items.name}</h1>
+        <h1>Actor: {items.portrayed}</h1>
+        <h1>NickName: {items.nickname}</h1>
+        <h1>Occupation: {items.occupation}</h1>
+        <h1>Status: {items.status}</h1>
       </div>
     </div>
   );
