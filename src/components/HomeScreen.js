@@ -24,13 +24,10 @@ function HomeScreen() {
     const slice = result.data.slice(offset, offset + characterPerPage);
 
     // console.log(result.data)
-
+    console.log(slice);
     setItems(slice);
     setIsLoading(false);
   };
-
-  console.log(currentPage);
-  console.log(setCharacterPerPage);
 
   useEffect(() => {
     fetchItems();
